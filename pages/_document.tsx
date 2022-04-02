@@ -33,6 +33,15 @@ export default function Document() {
           media="(prefers-color-scheme: dark)"
         />
 
+        <script
+          data-host="https://microanalytics.io"
+          data-dnt="false"
+          src="https://microanalytics.io/js/script.js"
+          id="ZwSg9rf6GA"
+          async
+          defer
+        />
+
         <link
           rel="apple-touch-icon"
           sizes="180x180"
