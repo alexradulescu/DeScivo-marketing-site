@@ -1,7 +1,7 @@
 import type { AppProps } from 'next/app'
-
-import { globalStyles } from 'components'
 import Head from 'next/head'
+
+import { globalStyles, HttpsRedirect } from 'components'
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   globalStyles()
@@ -11,7 +11,9 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
       <Head>
         <title>DeScivo</title>
       </Head>
-      <Component {...pageProps} />
+      <HttpsRedirect>
+        <Component {...pageProps} />
+      </HttpsRedirect>
     </>
   )
 }
