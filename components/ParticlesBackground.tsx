@@ -96,8 +96,7 @@ const PARTICLES_OPTIONS: ISourceOptions = {
         distance: 400,
         size: 40,
         duration: 2,
-        opacity: 8,
-        speed: 3
+        opacity: 8
       },
       repulse: {
         distance: 200,
