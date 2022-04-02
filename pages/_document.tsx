@@ -1,4 +1,5 @@
 import { Html, Head, Main, NextScript } from 'next/document'
+import { getCssText } from 'stitches.config'
 
 export default function Document() {
   return (
@@ -31,6 +32,11 @@ export default function Document() {
           name="theme-color"
           content="#0f172a"
           media="(prefers-color-scheme: dark)"
+        />
+
+        <style
+          id="stitches"
+          dangerouslySetInnerHTML={{ __html: getCssText() }}
         />
 
         <script

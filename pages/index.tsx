@@ -1,4 +1,5 @@
 import type { NextPage } from 'next'
+import Image from 'next/image'
 
 import { styled } from 'stitches.config'
 import { Card, ParticlesBackground, NewsletterSubscribe } from 'components'
@@ -8,7 +9,12 @@ const Home: NextPage = () => {
     <Main>
       <ParticlesBackground />
       <NewsletterCard header={<Heading>Stay tuned for more</Heading>}>
-        <Logo src={'/DeScivo_logo_full.png'} alt="DeScivo" />
+        <Logo
+          src={'/DeScivo_logo_full.png'}
+          alt="DeScivo"
+          width="204px"
+          height="54px"
+        />
         <NewsletterSubscribe />
       </NewsletterCard>
     </Main>
@@ -37,6 +43,6 @@ const Heading = styled('h1', {
   fontWeight: 'normal'
 })
 
-const Logo = styled('img', {
+const Logo = styled(Image, {
   height: 54
 })
