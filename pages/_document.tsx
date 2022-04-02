@@ -22,6 +22,17 @@ export default function Document() {
         <meta name="twitter:description" content="" />
         <meta name="twitter:image" content="/og-image.png" />
 
+        <meta
+          name="theme-color"
+          content="#0f172a"
+          media="(prefers-color-scheme: light)"
+        />
+        <meta
+          name="theme-color"
+          content="#0f172a"
+          media="(prefers-color-scheme: dark)"
+        />
+
         <link
           rel="apple-touch-icon"
           sizes="180x180"
