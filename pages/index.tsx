@@ -10,10 +10,12 @@ const Home: NextPage = () => {
       <ParticlesBackground />
       <NewsletterCard header={<Heading>Stay tuned for more</Heading>}>
         <Logo
-          src={'/DeScivo_logo_full.png'}
+          src={'/home-logo.png'}
           alt="DeScivo"
-          width="204px"
-          height="54px"
+          width={204}
+          height={54}
+          quality={100}
+          layout="intrinsic"
         />
         <NewsletterSubscribe />
       </NewsletterCard>

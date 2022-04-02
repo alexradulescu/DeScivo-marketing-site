@@ -3,7 +3,7 @@ import { getCssText } from 'stitches.config'
 
 export default function Document() {
   return (
-    <Html>
+    <Html lang="en">
       <Head>
         {/* <!-- HTML Meta Tags --> */}
         <meta name="description" content="" />
