@@ -4,6 +4,7 @@ export const globalStyles = globalCss({
   /*
     1. Use a more-intuitive box-sizing model.
     2. Reset margins and paddings
+    A. Semi custom font family
   */
   '*, *::before, *::after': {
     boxSizing: 'border-box',
@@ -15,9 +16,11 @@ export const globalStyles = globalCss({
   },
   /*
     3. Allow percentage-based heights in the application
+    B. Bg colour to remove the white line on some iOS devices
   */
   'html, body, #root, #__next': {
-    height: '100%'
+    height: '100%',
+    backgroundColor: '#0f172a'
   },
   /*
     Typographic tweaks!
